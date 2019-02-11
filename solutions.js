@@ -137,18 +137,16 @@ function isEven(x){
 
     var parsed=parseInt(x);
 
-    if(parsed % 2 ==  1){
+    if(parsed % 2 ==  0) {
 
-        return false;
-    }else if (x=="banana"){
-
-        return false;
-    }else if (x==true){
-
-        return false;
-    } else{
         return true;
+
+    }else{
+
+        return false;;
     }
+
+
 
 
 }
@@ -160,6 +158,7 @@ isEven(0);
 isEven(3);
 isEven("banana");
 isEven(true);
+isEven(false);
 
 function isIdentical(input1,input2){
 
