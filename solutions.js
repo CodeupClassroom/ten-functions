@@ -32,7 +32,7 @@ function isFalse(input) {
 
 
 function not(input) {
-    return input !== true;
+    return !input === true;
 } console.log(not(true));
 
 
