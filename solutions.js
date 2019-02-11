@@ -31,6 +31,8 @@ function isTrue(input) {
     }
 }
 
+// return input === true; // short version
+
 // 3. isFalse
 
 function isFalse(input) {
@@ -40,7 +42,6 @@ function isFalse(input) {
         return false;
     }
 }
-
 
 
 // 4. not
@@ -53,6 +54,8 @@ function not(input) {
     }
 }
 
+// return !input;
+
 // 5. addOne
 
 function addOne(input) {
@@ -61,9 +64,22 @@ function addOne(input) {
 
 // 1. isEven
 
+// function isEven(input) {
+//     return input % 2 === 0;
+// }
+
 function isEven(input) {
-    return input % 2 === 0;
+    if (input === false) {
+        return false;
+    } else if (input % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+
 }
+
+// return (input % 2 === 0 && !isTrue(input) && !isFalse(input)
 
 // 2. isIdentical
 
