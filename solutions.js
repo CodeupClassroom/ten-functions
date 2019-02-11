@@ -34,12 +34,14 @@ function isTrue(input) {
 // 3. isFalse
 
 function isFalse(input) {
-    if (input) {
-        return false;
-    } else {
+    if (input === false) {
         return true;
+    } else {
+        return false;
     }
 }
+
+
 
 // 4. not
 
@@ -62,8 +64,6 @@ function addOne(input) {
 function isEven(input) {
     return input % 2 === 0;
 }
-
-isEven();
 
 // 2. isIdentical
 
@@ -92,5 +92,5 @@ function and(input1, input2) {
 // 1. concat
 
 function concat(input1, input2) {
-    return input1 + input2;
+    return input1.toString() + input2.toString();
 }
