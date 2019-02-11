@@ -20,3 +20,53 @@
  * and
  * concat
  */
+
+function isTrue(param) {
+    return param  === true;
+}
+
+function isFalse(param) {
+    return param === false;
+}
+
+function not(param) {
+    return !param;
+}
+
+function addOne(num) {
+    return +num + 1;
+}
+
+function isEven(param) {
+    if (param === false)
+        return true;
+    else
+    return param % 2 === 0;
+}
+
+function isIdentical(param1,param2) {
+    if (param1 === param2){
+        return true;
+    }
+    else return false;
+}
+
+function isEqual(param1,param2) {
+    if (param1 == param2){
+        return true;
+    }
+    else return false;
+}
+
+function or(param1,param2) {
+    return param1 || param2;
+
+}
+
+function and(param1,param2) {
+    return param1 && param2;
+}
+
+function concat(param1,param2) {
+    return param1.toString() + param2.toString();
+}
