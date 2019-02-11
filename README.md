@@ -1,4 +1,4 @@
-➢ Ten Functions 
+git➢ Ten Functions 
 =================
 
 "Ten Functions" is a prepared environment for practicing introductory function writing with automated tests for feedback.
