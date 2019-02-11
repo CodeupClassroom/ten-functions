@@ -257,4 +257,5 @@ describe('isTrue', () => {
   it('should return false when passed a string as input', () => {
     expect(isTrue("hello world")).toBe(false);
   })
+
 })
