@@ -75,6 +75,7 @@
     function not(input) {
         return !input
     }
+
     // what if the question asks for output that would require a double bang (!!)?
 
 
