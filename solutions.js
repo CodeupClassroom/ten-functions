@@ -22,10 +22,14 @@
  */
 
 function concat(inputConcat_x, inputConcat_y) {
-    var inputConcat_x = inputConcat_x.toString();
-    var inputConcat_y = inputConcat_y.toString();
-    return inputConcat_x + inputConcat_y;
+    return inputConcat_x.toString() + inputConcat_y.toString();
 }
+
+// Alternate solution to concat
+// function concat(inputConcat_x, inputConcat_y) {
+//     return "" + inputConcat_x + inputConcat_y;
+// }
+
 
 console.log(concat("true", "true"));
 console.log(concat("hello", "world"));
@@ -33,9 +37,7 @@ console.log(concat(4, 2));
 
 
 function isEqual(isEqual_x, isEqual_y) {
-    var isEqual_x = +isEqual_x;
-    var isEqual_y = +isEqual_y;
-    return isEqual_x === isEqual_y;
+    return isEqual_x == isEqual_y;
 }
 
 isEqual("java", "javascript");
@@ -64,8 +66,7 @@ isIdentical();
 
 
 function addOne(addOne_x) {
-    var addOne_x = +addOne_x;
-    return addOne_x += 1;
+    return +addOne + 1;
 }
 
 console.log("addOne: " + addOne("0"));
@@ -78,11 +79,16 @@ function isEven(isEven_x) {
     return isEven_x % 2 === 0;
 }
 
+// Alternate solution to isEven
+// function isEven(isEven_x) {
+//     return (isEven_x % 2 === 0 && !isTrue(isEven_x) && !isFalse(isEven_x));
+// }
+
 console.log("isEven:" + isEven(false));
 
 
 function not(not_x) {
-    return !not_x === true;
+    return !not_x;
 }
 
 console.log("Not true: " + not(true));
