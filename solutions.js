@@ -39,28 +39,25 @@ function addOne(num) {
 
 function isEven(param) {
     if (param === false)
+        return false;
+    else if (param % 2 === 0)
         return true;
     else
-    return param % 2 === 0;
+        return false;
 }
 
 function isIdentical(param1,param2) {
-    if (param1 === param2){
+    if (param1 === param2)
         return true;
-    }
     else return false;
 }
 
 function isEqual(param1,param2) {
-    if (param1 == param2){
-        return true;
-    }
-    else return false;
+    return param1 == param2;
 }
 
 function or(param1,param2) {
     return param1 || param2;
-
 }
 
 function and(param1,param2) {
