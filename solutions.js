@@ -20,3 +20,93 @@
  * and
  * concat
  */
+
+//////////////////////////addONE///////////////////////////////////////////////
+
+function addOne(number) {
+    return (Number(number) + 1);
+}
+
+addOne(9);
+
+//////////////////////////isTrue///////////////////////////////////////////////
+
+function isTrue(input) {
+    if (input === true){
+        return true
+    } else {
+       return false
+    }
+}
+
+isTrue(input);
+
+//////////////////////////isEven///////////////////////////////////////////////
+
+function isEven(input) {
+    if ((input % 2) === 0){
+        return true
+    } else {
+        return false
+    }
+}
+
+isEven(input);
+
+//////////////////////////isFalse///////////////////////////////////////////////
+
+function isFalse(input) {
+    if (input === false){
+        return true
+    } else {
+        return false
+    }
+}
+
+isFalse(input);
+
+//////////////////////////not///////////////////////////////////////////////////
+
+function not(input) {
+    return !input
+}
+not(input);
+
+//////////////////////////isIdentical///////////////////////////////////////////
+
+function isIdentical(input1,input2) {
+    return input1 === input2
+}
+
+isIdentical(input1,inpput2);
+
+//////////////////////////isEqual//////////////////////////////////////////////
+
+function isEqual(input1,input2) {
+    return (input1 == input2);
+}
+
+isEqual(input1,input2);
+
+//////////////////////////or////////////////////////////////////////////////////
+
+function or(inputOne,inputTwo) {
+    return inputOne || inputTwo;
+}
+or(inputOne,inputTwo);
+
+//////////////////////////and///////////////////////////////////////////////////
+
+function and(inputOne,inputTwo) {
+    return inputOne && inputTwo;
+}
+
+and(inputOne,inputTwo);
+
+//////////////////////////concat////////////////////////////////////////////////
+
+function concat(input1,input2) {
+    return ((input1.toString())+(input2.toString()));
+}
+
+concat(input1,input2);
