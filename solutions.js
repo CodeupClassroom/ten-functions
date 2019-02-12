@@ -32,35 +32,28 @@ function isFalse(input) {
 
 
 function not(input) {
-    return !input === true;
+    return !input
 } console.log(not(true));
 
 
 function addOne(input) {
-    if (input >= 0 && input !== true && input !== false || input < 0){
-        return +input + 1;
-    }else {return NaN;}
-} console.log(addOne("2"));
+    return +input + 1;
+}
 
 
 function isEven(input) {
-    if (input !== true && input !== false && input % 2 === 0){
-        return true;
-    } else return false;
+   return (input !== true && input !== false && input % 2 === 0);
 } console.log(isEven("-3"));
 
 
 function isIdentical(input1, input2) {
-    if(input1 === input2){
-        return true;
-    } else {return false;}
+    return (input1 === input2);
 } console.log (isIdentical(false, false));
 
 
 function isEqual(input3, input4) {
-    if(input3 == input4){
-        return true;
-    } else {return false;}
+    return (input3 == input4);
+
 } console.log (isEqual(true, "1"));
 
 
